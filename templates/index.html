@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css')}}"
+    <title>Checkers</title>
+</head>
+<body>
+    {% for x in range(0, 4): %}
+    <table>
+        <tr>
+            <td class="light"></td>
+            <td class="dark"></td>
+            <td class="light"></td>
+            <td class="dark"></td>
+            <td class="light"></td>
+            <td class="dark"></td>
+            <td class="light"></td>
+            <td class="dark"></td>
+        </tr>
+        <tr>
+            <td class="dark"></td>
+            <td class="light"></td>
+            <td class="dark"></td>
+            <td class="light"></td>
+            <td class="dark"></td>
+            <td class="light"></td>
+            <td class="dark"></td>
+            <td class="light"></td>
+        </tr>
+    </table>
+    {% endfor %}
+</body>
+</html>
